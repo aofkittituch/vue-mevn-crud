@@ -2,7 +2,7 @@
   <div class="row justify-content-center">
     <div class="col-md-6">
       <!-- Content goes here -->
-      <h1>Create Student Page</h1>
+      <h1>Create Student</h1>
       <form @submit.prevent="handleSubmitForm">
         <div class="form-group">
           <label for="name">Name</label>
@@ -27,6 +27,7 @@
           <input
             type="text"
             class="form-control"
+            maxlength="10"
             v-model="student.phone"
             required
           />
